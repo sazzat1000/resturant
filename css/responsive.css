@@ -1,0 +1,83 @@
+@media (max-width: 575.98px) {
+  header .wave {
+    margin-bottom: -1px;
+  }
+  #menu .dot {
+    bottom: 0;
+  }
+  #testimonial .dot {
+    bottom: 0;
+  }
+  #testimonial .wave {
+    margin-bottom: -1px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header {
+    height: 650px;
+  }
+  #promo .promo-text {
+    text-align: center;
+    padding: 0;
+    margin: 40px 0;
+  }
+  #promo .promo-text p {
+    width: 100%;
+  }
+  #promo .dot {
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  #order .order-item {
+    margin-bottom: 40px;
+  }
+  footer .footer-item {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header nav #nav-menu ul .nav-item {
+    margin-left: 0;
+  }
+  header nav #nav-menu ul .nav-item .nav-link {
+    font-size: 15px;
+  }
+  header .wave {
+    bottom: -1px;
+  }
+  #promo .promo-text h3 {
+    font-size: 40px;
+  }
+  #promo .promo-text p {
+    width: 100%;
+    font-size: 16px;
+  }
+  #promo .dot {
+    left: 30%;
+  }
+  #order .order-item {
+    padding: 0;
+  }
+  #order .order-item h5 {
+    font-size: 28px;
+  }
+  #testimonial .wave {
+    bottom: -1px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header {
+    height: 700px;
+  }
+  header .banner .banner-content h1 {
+    font-size: 56px;
+  }
+  #order .order-item {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

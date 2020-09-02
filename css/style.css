@@ -1,0 +1,525 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+/* ============== Common CSS Start ============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  color: #504f4f;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a,
+i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.btn {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 11px 35px;
+  border: 2px solid #7287ae;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: #7287ae;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  width: 100%;
+  height: 200%;
+  background: #7287ae;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  height: 0%;
+}
+
+.section-intro {
+  text-align: center;
+}
+
+.section-intro h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #7287ae;
+}
+
+.dot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-animation-name: glow;
+          animation-name: glow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.dot-2 {
+  -webkit-animation-name: glow;
+          animation-name: glow;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+a:focus,
+button:focus,
+.btn:focus,
+input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* ============== Common CSS End ============== */
+/* ============== Header Start ============== */
+header {
+  background: #7287ae;
+  height: 800px;
+  position: relative;
+  z-index: 2;
+}
+
+header nav .navbar-toggler {
+  color: #fff;
+}
+
+header nav #nav-menu ul .nav-item {
+  margin-left: 20px;
+}
+
+header nav #nav-menu ul .nav-item .nav-link {
+  font-size: 17px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+header nav #nav-menu ul .nav-item .nav-link.active,
+header nav #nav-menu ul .nav-item .nav-link:hover {
+  color: #ddbbcb;
+}
+
+header .banner {
+  height: 100%;
+  position: relative;
+  padding: 12%;
+}
+
+header .banner .container {
+  position: relative;
+  height: 100%;
+}
+
+header .banner .container .row {
+  height: 100%;
+}
+
+header .banner .banner-content {
+  text-align: center;
+  color: #fff;
+}
+
+header .banner .banner-content h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+header .banner .dot {
+  top: 50%;
+  right: 0;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+header .banner .dot-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+header .wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+header .wave path {
+  fill: #e3ecc2;
+}
+
+header .sticky {
+  background: #7287ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/* ============== Header End ============== */
+/* ============== Menu Start ============== */
+#menu {
+  background: #e3ecc2;
+  padding: 90px 0 120px;
+  position: relative;
+}
+
+#menu .section-intro h2 {
+  margin-bottom: 50px;
+}
+
+#menu .menu-item {
+  margin-bottom: 40px;
+}
+
+#menu .menu-item .menu-image {
+  width: 100%;
+}
+
+#menu .menu-item .menu-image img {
+  width: 100%;
+}
+
+#menu .menu-item .menu-text {
+  padding: 20px;
+  background: #fff;
+}
+
+#menu .menu-item .menu-text h5 {
+  color: #504f4f;
+  font-size: 25px;
+  margin-bottom: 13px;
+}
+
+#menu .menu-item .menu-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#menu .menu-item .menu-text .price {
+  display: block;
+  font-weight: 700;
+  color: #565656;
+}
+
+#menu .dot {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+
+/* ============== Menu End ============== */
+/* ============== Promo Start ============== */
+#promo .promo-image {
+  position: relative;
+}
+
+#promo .promo-image img {
+  width: 100%;
+}
+
+#promo .dot {
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#promo .promo-text {
+  padding-left: 10%;
+}
+
+#promo .promo-text h3 {
+  font-size: 45px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#promo .promo-text p {
+  width: 80%;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+#promo .promo-text.free {
+  padding-left: 0;
+}
+
+/* ============== Promo End ============== */
+/* ============== Order Start ============== */
+#order {
+  background: #7287ae;
+  padding: 80px 0;
+}
+
+#order .section-intro {
+  margin-bottom: 60px;
+}
+
+#order .section-intro h2 {
+  color: #fff;
+}
+
+#order .order-item {
+  text-align: center;
+  padding: 0 15px;
+}
+
+#order .order-item .number {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #7287ae;
+  margin-bottom: 20px;
+}
+
+#order .order-item h5 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 23px;
+}
+
+#order .order-item p {
+  color: #fff;
+}
+
+/* ============== Order End ============== */
+/* ============== Delivery Start ============== */
+#delivery {
+  background: url(../img/delivery.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 100px 0 120px;
+  text-align: center;
+  position: relative;
+}
+
+#delivery h2 {
+  font-size: 44px;
+  color: #7287ae;
+  margin-bottom: 25px;
+}
+
+#delivery p {
+  color: #7287ae;
+  margin-bottom: 45px;
+}
+
+#delivery .dot {
+  bottom: -50px;
+  z-index: 10;
+  z-index: 1;
+}
+
+/* ============== Delivery End ============== */
+/* ============== Testimonial Start ============== */
+#testimonial {
+  padding: 50px 0 280px;
+  background: #dfe9c1;
+  position: relative;
+}
+
+#testimonial .testimonial-content {
+  text-align: center;
+  color: #7287ae;
+}
+
+#testimonial .testimonial-content img {
+  margin-bottom: 25px;
+}
+
+#testimonial .testimonial-content p {
+  color: #7287ae;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+#testimonial .testimonial-content h6 {
+  font-size: 23px;
+  margin-bottom: 40px;
+}
+
+#testimonial .testimonial-content ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#testimonial .testimonial-content ul li a i {
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#testimonial .testimonial-content ul li a i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #7287ae;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+#testimonial .testimonial-content ul li a i:hover::after {
+  top: 100%;
+  color: #7287ae;
+  z-index: 20;
+}
+
+#testimonial .testimonial-content ul li a i:hover {
+  color: #7287ae;
+}
+
+#testimonial .wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#testimonial .wave path {
+  fill: #7287ae;
+}
+
+#testimonial .dot {
+  left: 0;
+  bottom: 20%;
+}
+
+/* ============== Testimonial End ============== */
+/* ============== footer Start ============== */
+footer {
+  background: #7287ae;
+  padding: 50px 0;
+  position: relative;
+}
+
+footer .footer-item img {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+footer .footer-item p {
+  color: #fff;
+}
+
+footer .footer-item h5 {
+  margin: 15px 0 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer .footer-item ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-item ul li a {
+  color: #fff;
+}
+
+footer .footer-item ul li a:hover {
+  padding-left: 10px;
+}
+/*# sourceMappingURL=style.css.map */
